@@ -23,15 +23,15 @@ const Header = () => {
 
                 <div className='md:block hidden'>
                     <ul className='flex gap-5 text-xl font-serif'>
-                        <Link to="/" className='hover:text-blue-500 cursor-pointer' onClick={toggleMenu}>Home</Link>
-                        <Link to="/practicing-area" className='hover:text-blue-500 cursor-pointer' onClick={toggleMenu}>Practicing Area</Link>
-                        <Link to="/services" className='hover:text-blue-500 cursor-pointer' onClick={toggleMenu}>Services</Link>
-                        <Link to="/about" className='hover:text-blue-500 cursor-pointer' onClick={toggleMenu}>About</Link>
-                        <Link to="/contact" className='hover:text-blue-500 cursor-pointer' onClick={toggleMenu}>Contact</Link>
+                        <Link to="/" className='hover:text-blue-500 cursor-pointer' >Home</Link>
+                        <Link to="/practicing-area" className='hover:text-blue-500 cursor-pointer' >Practicing Area</Link>
+                        <Link to="/services" className='hover:text-blue-500 cursor-pointer' >Services</Link>
+                        <Link to="/about" className='hover:text-blue-500 cursor-pointer' >About</Link>
+                        <Link to="/contact" className='hover:text-blue-500 cursor-pointer' >Contact</Link>
                     </ul>
                 </div>
 
-                <div className={open ? `bg-gray-300 w-[300px] h-[100vh] fixed top-15 right-0 z-50 p-10` : `hidden`}>
+                <div className={open ? `bg-gray-300 w-[300px] h-[100vh] fixed top-15 right-0 z-50 p-10` : ` hidden`}>
                     <ul className='flex flex-col gap-5 text-xl font-serif items-center justify-center'>
                         <Link to="/" className='hover:text-blue-500 hover:border-2 hover:border-blue-500 cursor-pointer' onClick={toggleMenu}>Home</Link>
                         <Link to="/practicing-area" className='hover:text-blue-500 hover:border-2 hover:border-blue-500 cursor-pointer' onClick={toggleMenu}>Practicing Area</Link>

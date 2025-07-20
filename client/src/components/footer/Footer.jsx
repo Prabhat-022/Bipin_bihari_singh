@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="flex flex-col items-center justify-center lg:flex lg:flex-row lg:items-center lg:  lg:mx-20 lg:mt-20 lg:justify-between">
 
                 <div className="flex flex-col text-center gap-2 mb-4 md:flex md:flex-col md:justify-between md:items-center">
-                    <h1 className='font-serif text-2xl underline font-semibold '>CONTENT</h1>
+                    <h1 className='font-serif text-2xl underline font-semibold '>CONTACT</h1>
                     <p>+91 9876543210</p>
                     <p>+ 91 9876543210</p>
                     <p>bipinb2210@gmail.com</p>
