@@ -6,6 +6,10 @@ import Layout from './layout/index'
 import PracticingArea from './components/practicing_area/PracticingArea'
 import Services from './components/services/Services'
 import Contact from './components/contact/Contact'
+import BankruptcyLaw from './components/lawpage/BankruptcyLaw'
+import CriminalLaw from './components/lawpage/CriminalLaw'
+import FamilyLaw from './components/lawpage/FamilyLaw'
+import BusinessLaw from './components/lawpage/BusinessLaw'
 
 const App = () => {
   return (
@@ -18,6 +22,10 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/practicing-area" element={<PracticingArea />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/bankruptcy-law" element={<BankruptcyLaw />} />
+            <Route path="/criminal-law" element={<CriminalLaw />} />
+            <Route path="/family-law" element={<FamilyLaw />} />
+            <Route path="/business-law" element={<BusinessLaw />} />
           </Route>
 
         </Routes>

@@ -9,7 +9,7 @@ const Home = () => {
     return (
 
         <>
-            <main>
+            <main >
                 <section className='lg:mx-20 md:mx-20'>
                     <div className="h-[100vh]">
                         <img src={mainImage} alt="" className="w-[100%] h-[100%] object-cover relative" />
@@ -17,15 +17,18 @@ const Home = () => {
 
 
                             <h2 className='text-center font-serif mt-4 font-bold text-2xl'>🏛 Why Choose Me</h2>
-                            <p className='text-start font-serif mt-4'>🎓 Trained at Allahabad University – one of India’s premier institutions for legal education</p>
+                            <div className="lg:mx-20 md:mx-20 lg:flex lg:gap-5 md:gap-5 lg:mt-5 md:mt-2 flex flex-col items-center justify-center">
+                                <p className='text-start font-serif mt-4'>🎓 Trained at Allahabad University – one of India’s premier institutions for legal education</p>
 
-                            <p className='text-start font-serif mt-4'>📚 Strong academic background with a Master's in Law (LL.M)</p>
+                                <p className='text-start font-serif mt-4'>📚 Strong academic background with a Master's in Law (LL.M)</p>
 
-                            <p className='text-start font-serif mt-4'>🧠 Analytical thinker with a passion for justice and fair representation</p>
+                                <p className='text-start font-serif mt-4'>🧠 Analytical thinker with a passion for justice and fair representation</p>
 
-                            <p className='text-start font-serif mt-4'>💬 Clear, client-friendly cpmmunication in both English and Hindi</p>
+                                <p className='text-start font-serif mt-4'>💬 Clear, client-friendly cpmmunication in both English and Hindi</p>
 
-                            <p className='text-start font-serif mt-4'>🤝 Committed to ethical practice and building long-term client trust</p>
+                                <p className='text-start font-serif mt-4'>🤝 Committed to ethical practice and building long-term client trust</p>
+                            </div>
+ 
                             <div className='lg:flex lg:gap-5 md:gap-5 lg:mt-5 md:mt-2 flex flex-col items-center justify-center '>
                                 <button className="bg-blue-500 text-white px-5 py-2 rounded mb-2 lg:p-3 md:p-2 w-[50%] "><Link to="/about">Read More</Link></button>
 
@@ -36,13 +39,14 @@ const Home = () => {
                     </div>
 
                 </section>
-                <section className='lg:mx-10 md:mx-20'>
+
+                <section className='lg:mx-20 md:mx-20 bg-gray-50 '>
+                    <h1 className='text-center font-serif mt-4 font-bold text-2xl lg:mt-20 md:mt-20'>Areas of Practice</h1>
                     <PracticingArea />
                 </section>
-                <section>
 
-                </section>
-                <section>
+                <section className='lg:mx-20 md:mx-20 bg-gray-50'>
+                    <h1 className='text-center font-serif mt-4 font-bold text-4xl pt-4 lg:mt-20 md:mt-20'>Book an Appointment</h1>
                     <Book_Appointment />
 
                 </section>
