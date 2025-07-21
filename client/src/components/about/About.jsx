@@ -51,7 +51,7 @@ const About = () => {
 
 
           <div className="flex gap-5 justify-center mt-5">
-            <button className="bg-transparent hover:bg-blue-500 hover:text-white border-2  border-blue-500 text-black px-5 py-2 rounded hover:border-blue-500"> <Link to="/contact">Contact Us</Link></button>
+            <button className="moving-border bg-transparent hover:bg-blue-500 hover:text-white border-2  border-blue-500 text-black px-5 py-2 rounded hover:border-blue-500"> <Link to="/contact">Contact Us</Link></button>
           </div>
         </div>
       </div>

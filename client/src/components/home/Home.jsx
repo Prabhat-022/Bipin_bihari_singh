@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import PracticingArea from '../practicing_area/PracticingArea'
 
 const Home = () => {
+
     return (
 
         <>
@@ -28,11 +29,12 @@ const Home = () => {
 
                                 <p className='text-start font-serif mt-4'>🤝 Committed to ethical practice and building long-term client trust</p>
                             </div>
- 
-                            <div className='lg:flex lg:gap-5 md:gap-5 lg:mt-5 md:mt-2 flex flex-col items-center justify-center '>
-                                <button className="bg-blue-500 text-white px-5 py-2 rounded mb-2 lg:p-3 md:p-2 w-[50%] "><Link to="/about">Read More</Link></button>
 
-                                <button className="bg-transparent border-1 border-blue-500 text-black px-5  rounded hover:bg-gray-500 hover:text-white hover:border-blue-500 "><Link to="/contact">Make an Appointment</Link></button>
+                            <div className='lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-5 md:gap-5 lg:mt-5 md:mt-2 flex flex-col items-center justify-center'>
+
+                                <button className="bg-sky-600 text-white px-5 py-2 rounded mb-2 lg:p-3 md:p-2 hover:bg-blue-500 hover:text-white "><Link to="/about">Read More</Link></button>
+
+                                <button className="moving-border lg:p-3 bg-transparent border-1 border-blue-500 text-black px-5  rounded hover:bg-blue-500 hover:text-white hover:border-blue-500 "><Link to="/contact">Make an Appointment</Link></button>
                             </div>
                         </div>
 
@@ -40,7 +42,7 @@ const Home = () => {
 
                 </section>
 
-                <section className='lg:mx-20 md:mx-20 bg-gray-50 '>
+                <section className='lg:mx-20 md:mx-20 bg-gray-50'>
                     <h1 className='text-center font-serif mt-4 font-bold text-2xl lg:mt-20 md:mt-20'>Areas of Practice</h1>
                     <PracticingArea />
                 </section>
@@ -50,7 +52,6 @@ const Home = () => {
                     <Book_Appointment />
 
                 </section>
-
             </main>
         </>
     )
